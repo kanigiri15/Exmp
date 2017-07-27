@@ -1,0 +1,74 @@
+package exampleProj;
+
+public class Sol {
+
+	public static void main(String[] args) {
+		//System.out.println("Enter no of test cases:");
+		//Scanner input = new Scanner(System.in);
+
+		//int size = input.nextInt();
+		int sum = 0;
+		int high = 0;
+		int largestSum =0;
+		int lrgArr[] = new int[5];
+		//int[][] arr = { { 3000,400,1500,4350,2700 }, { 2050, 3650,650,2750,4300 }, { 2000, 700, 2100,700,1650 }, { 300, 200,500,600, 200 },{3000,3100,3200,1100,1400} };
+		int[][] arr = { { 800,3000,600,3600,800 }, { 1400, 5200,1600,6000,2600 }, { 3200, 5200, 3200,1600,2400 }, { 800, 2800,4800,600, 1400 },{5200,1400,4800,3800,800},{5000,4200,4800,1800,2000} };
+		for(int a=0; a< 5;a++){
+			for(int b=0; b< 5;b++){
+				for(int c=0; c< 5;c++){
+					for(int d=0; d< 5;d++){
+						for(int e=0; e< 5;e++){
+							for(int f=0; f< 5;f++){
+								high = arr[0][a];
+								sum = arr[0][a]; 
+								if(arr[0][a]<arr[1][b]){
+									sum += arr[1][b];
+									high = arr[1][b];
+								}
+								//System.out.println(sum);
+								if(high<arr[2][c]){
+									sum += arr[2][c];
+									high = arr[2][c];
+								}
+								//System.out.println(sum);
+								if(high<arr[3][d]){
+									sum += arr[3][d];
+									high= arr[3][d];
+								}
+								//System.out.println(sum);
+								if(high<arr[4][e]){
+									sum += arr[4][e];
+									high= arr[4][e];
+								}
+								//System.out.println(sum);
+								if(high<arr[5][f]){
+									sum += arr[5][f];
+									high= arr[5][f];
+								}
+								//System.out.println(sum);
+								if(largestSum<sum){
+									largestSum = sum;
+									System.out.println(largestSum);
+									System.out.print(arr[0][a]+",");
+									System.out.print(arr[1][b]+",");
+									System.out.print(arr[2][c]+",");
+									System.out.print(arr[3][d]+",");
+									System.out.print(arr[4][e]+",");
+									System.out.println(arr[5][f]);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		int size = 5;
+		for(int i=0;i<size;i++){
+			
+		}
+		
+		//System.out.println(largestSum);
+	}
+	
+
+}

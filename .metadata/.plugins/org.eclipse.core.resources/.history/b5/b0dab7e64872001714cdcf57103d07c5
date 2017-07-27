@@ -1,0 +1,9 @@
+package exampleProj;
+
+public class exmp {
+	public static void main(String[] args) {
+		long int1 = 234567678;
+		int int2 = (int)int1;
+		System.out.println(int2 + " "+ ((Object)int2).getClass().getName());
+	}
+}

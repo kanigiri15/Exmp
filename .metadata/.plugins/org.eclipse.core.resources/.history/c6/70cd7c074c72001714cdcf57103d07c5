@@ -1,0 +1,14 @@
+package exampleProj;
+
+public class exmp {
+	
+	int a;
+	
+	public static void main(String[] args) {
+		long int1 = 234567678;
+		byte int2 = (byte)int1;
+		System.out.println(int2 + " "+ ((Object)int2).getClass());	
+		exmp e = new exmp();
+		e.a = 10;
+	}
+}

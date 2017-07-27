@@ -1,0 +1,9 @@
+package exampleProj;
+
+public class exmp {
+	public static void main(String[] args) {
+		long int1 = 266;
+		byte int2 = (byte)int1;
+		System.out.println(int2 + " "+ ((Object)int2).getClass());	
+	}
+}
